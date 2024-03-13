@@ -8,6 +8,7 @@ then
 else
     case $2 in
     "--latest")
+	#test git push origin
         # Your code here. (2/4)
 	tail $1 -n 2 > 2.txt
 	tail $1 -n 5 > 5.txt
