@@ -12,7 +12,9 @@ cp ./copyme ./mydir
 mv ./mydir/copyme ./mydir/copied
 
 cat ./readme
-
+: '
+ The only obescure knowledge in lab0-exam, gcc xxx.c 2> output.txt
+'
 gcc bad.c 2>err.txt
 
 mkdir ./gen
@@ -26,8 +28,8 @@ fi
 i=1
 while [ $i -le $n ]
 do
-	>gen/$i.txt
-	i=$((i+1))
+	touch gen/$i.txt
+	i=$[$i+1]
 done
 
 
